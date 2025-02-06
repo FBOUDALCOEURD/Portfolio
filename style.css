@@ -1,2 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Carrois Gothic", cursive;
+}
 
+header {
+    padding: 2rem 10%;
+    background: black;
+}
 
+.logo {
+    display: flex;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: normal;
+}
+
+.nav-links a {
+    margin: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.body { 
+    margin: 0 auto;
+}
