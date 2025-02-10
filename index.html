@@ -11,9 +11,7 @@
 <body>
     <!--Definition du header pour la Navbar -->
     <header>
-        <div class="logo">
-            <img src="Images/U-Xplore.png" alt="Logo du site">
-        </div>
+            <img class="logoSite" src="Images/U-Xplore.png" alt="Logo du site">
         <nav>
             <div class = "menu-toogle">
                 <i class="fas fa-bars"></i>
@@ -25,7 +23,9 @@
                 <a href="#">Contact</a>
             </div>
         </nav>
-
+        <div class="downPage">
+            <a class="scroolNav" href="#footer">Bas de page</a>
+        </div>
     </header> 
 
     <!-- Création du contenue de la page -->
@@ -33,23 +33,52 @@
         <!-- Section Présentation -->
          <section class="about">
             <div class="presentation">
+                
+                <h1>
+                    A propos
+                </h1>
                 <p>
-                    Je m'appelle Florian
+                    Bonjour,
+                    <br>
+                    Je m'appelle Florian. Je suis passionné par le design et
+                    <br>
+                    l'expérience utilisateur,  je serais ravi de partager avec
+                    <br>
+                     vous mon univers et mes réalisations. 
+                    <br>
+                    N'hésitez pas à explorer mon portfolio et à me contacter 
+                    <br>
+                    si vous avez des questions ou des opportunités de collaboration.                
                 </p>
             </div>
-            <div class="monimage">
-                <img src="Images/3d-image.jpg" alt="Ma Photo">
-            </div>
+                <img class="profil" src="Images/3d-image.jpg" alt="Ma Photo">
          </section>
         <!-- Section Outils-->
+         <section class="tools">
+            <h1 class="textcenter">
+                Mes outils
+            </h1>
+         </section>
         <!-- Section Projets -->
+         <section class="projects">
+            <h1>
+                Mes projets
+            </h1>
+         </section>
         <!-- Section Contact -->
+         <section class="contact">
+            <h1>
+                Contact
+            </h1>
+         </section>
         
     </main>
 
     <!-- Definition du Footer -->
-    <footer>
-        
+    <footer id="footer">
+        <div class="UpPage">
+            <a class="scroolnav" href="#top">Haut de page</a>
+        </div>
     </footer>
     
 </body>
