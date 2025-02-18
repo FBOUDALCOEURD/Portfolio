@@ -392,6 +392,10 @@ margin: 2%;
 
 
 /*Partie Projet1*/
+.nameProject{
+text-align: center;
+}
+
 .projet_1{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
