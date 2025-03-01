@@ -14,6 +14,7 @@ img {
 
 body {
     min-height: 100%;
+    min-width: auto;
     display: grid;
     grid-template-rows: repeat(5, 5% 1fr 1fr 1fr 5%);
 }
@@ -287,21 +288,6 @@ background-color: rgb(4, 252, 78);
 
         max-width: 15rem;
     }
-    button {
-        
-        background-color: #5c3a0e;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    button:hover{
-        background-color: #c7bc1e;
-    }
 
     /*Partie Contact*/
     .contact {
@@ -396,12 +382,13 @@ margin: 2%;
 text-align: center;
 }
 
-.projet_1_2{
+.projet_1_2_3{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-template-rows: repeat(2);
     row-gap: 7rem;
     text-align: center;
+    margin: 2rem;
 }
 
 .logoToolsp{
@@ -422,13 +409,30 @@ text-align: center;
 
 
 .exampleProject{
-    grid-area: 2/2/2/3;
+    grid-column: 1/span3;
+    grid-row: 2;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     row-gap: 1rem;
     justify-content: center;  
     text-align: center; 
+    margin: 2rem;
 }
+
+button {
+    max-width: 9rem;
+    background-color: #5c3a0e;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #c7bc1e;
+}
+
 .exempleI{
     max-width: 100%;
     margin-top: 1rem;
@@ -445,4 +449,17 @@ video{
 .img_plantaxis{
     max-width: 100%;
     border-radius: 2rem;
+}
+
+/*Partie projet_3*/
+.exampleProject_3{
+    grid-column: 1/span3;
+    grid-row: 2;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.blockExample_3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
