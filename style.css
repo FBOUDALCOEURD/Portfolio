@@ -243,7 +243,11 @@ background-color: rgb(4, 252, 78);
                 outline-offset: -5px;
               }
             }
+            &:active{
+                
+            }
     }
+
     /*Partie Project*/
     .projects {
         background-color: purple;
@@ -385,8 +389,8 @@ text-align: center;
 .projet_1_2_3{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    grid-template-rows: repeat(2);
-    row-gap: 7rem;
+    grid-template-rows: repeat(2 , 2% 1fr);
+    row-gap: 2rem;
     text-align: center;
     margin: 2rem;
 }
@@ -457,12 +461,15 @@ video{
     grid-row: 2;
     justify-content: center;
     margin: 2rem;
+
+   
 }
 
 .blockExample_3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap : 2rem;
+
 }
 
 .img_flopaqua{
@@ -472,4 +479,9 @@ video{
 
 iframe{ 
     width: 100%;
+}
+
+.FlopAqua{
+    border-right: thick solid #000;
+    padding-right: 2rem;
 }
