@@ -377,7 +377,7 @@ margin: 2%;
 
 
 
-/*Partie Projet1*/
+/*Partie Projet_1*/
 .nameProject{
 text-align: center;
 }
@@ -462,4 +462,14 @@ video{
 .blockExample_3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap : 2rem;
+}
+
+.img_flopaqua{
+    max-width: 50%;
+    border-radius: 2rem;
+}
+
+iframe{ 
+    width: 100%;
 }
