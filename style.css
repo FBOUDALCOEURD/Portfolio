@@ -16,7 +16,7 @@ body {
     min-height: 100%;
     min-width: auto;
     display: grid;
-    grid-template-rows: repeat(5, 5% 1fr 1fr 1fr 5%);
+   /* grid-template-rows: repeat(5, 5% 1fr 1fr 1fr 5%);*/
 }
 /* configuration des Textes*/
 h1 {
@@ -462,7 +462,6 @@ video{
     justify-content: center;
     margin: 2rem;
 
-   
 }
 
 .blockExample_3{
@@ -478,7 +477,8 @@ video{
 }
 
 iframe{ 
-    width: 100%;
+   width: 40%;
+     
 }
 
 .FlopAqua{
@@ -487,12 +487,12 @@ iframe{
 }
 
 /*responsive mobile/tablette 800px*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width:800px){
     body{
         max-width: 100%;
         max-height: auto;
         display: grid;
-    grid-template-rows: repeat(5, 5% 1fr 1fr 1fr 5%);
+    
     }
     /*header*/
     header {

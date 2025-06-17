@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Portfolio design UI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"
+          rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet"
+          href="style.css">
+    <script src="script.js"
+            defer></script>
 </head>
 
 <body>
     <!--Definition du header pour la Navbar -->
     <header id="headerId">
-            <img class="logoSite" src="Images/U-Xplore.png" alt="Logo du site">
+        <img class="logoSite"
+             src="Images/U-Xplore.png"
+             alt="Logo du site">
         <nav>
             <div class="nav-links">
-                <a href="index.html" >Accueil</a>
-                <a href="#toolsId">Outils</a>
+                <a href="index.html">Accueil</a>
+                <a href="index.html#toolsId">Outils</a>
                 <!--<div class="project">
                     <button class="dropbtn" href="#projectId">Project
                     </button>
@@ -25,66 +36,102 @@
                       <a href="projet3.html">Projet3</a>
                     </div>
                   </div>-->
-                <a href="#projectId"class="active">Projets</a>
-                <a href="#contactId">Contact</a>
+                <a href="index.html#projectId"
+                   class="active">Projets</a>
+                <a href="index.html#contactId">Contact</a>
             </div>
         </nav>
         <div class="downPage">
-            <a class="scroolNav" href="#footer">Bas de page</a>
+            <a class="scroolNav"
+               href="#footer">Bas de page</a>
         </div>
-    </header> 
+    </header>
 
     <!-- Création du contenue de la page -->
     <main>
         <h1 class="nameProject"> Projet : Autodesk Forge</h1><br>
-    <div class="projet_1_2_3">
-        <section class="Description">
-            <h2> Description :</h2><br>
-            <p>Ce projet était le sujet de mon stage de 3ème année en licence informatique chez Atlancad en tant que développeur cloud.
+        <div class="flex md:flex-row flex-col gap-2 md:gap-5">
+            <section class="Description">
+                <h2> Description :</h2><br>
+                <p>Ce projet était le sujet de mon stage de 3ème année en licence informatique chez Atlancad en tant que
+                    développeur cloud.
 
-                Mon objectif était d’analyser, tester et découvrir une technologie sous licence Autodesk appelé Forge afin de remplacer une autre application s’appelant Configurator 360 qui peut par exemple changer les matériaux, les objets et les dimensions d'une voiture en 3D pour ensuite rediriger le client vers une facture du véhicule obtenu par les changements.
+                    Mon objectif était d’analyser, tester et découvrir une technologie sous licence Autodesk appelé
+                    Forge afin de remplacer une autre application s’appelant Configurator 360 qui peut par exemple
+                    changer les matériaux, les objets et les dimensions d'une voiture en 3D pour ensuite rediriger le
+                    client vers une facture du véhicule obtenu par les changements.
 
-                J'ai alors créé différentes API sous Forge afin de récolter un maximum d'informations sur ces fonctionnalités et ainsi donner une base pour Atlancad.
+                    J'ai alors créé différentes API sous Forge afin de récolter un maximum d'informations sur ces
+                    fonctionnalités et ainsi donner une base pour Atlancad.
                 </p>
-        </section>
-        <section class="toolsProject">
-            <h2> Outils utilisées :</h2><br>
-            <div class="logo-tools-p">
-                <img class="logoToolsp" src="Images/Logo/autodesk-forge_logo.png" alt="Logo d'autodesk forge">
-                <img class="logoToolsp" src="Images/Logo/Inventor-logo.png" alt="Logo d'autodesk Inventor">
-                <img class="logoToolsp" src="Images/Logo/fusion.png" alt="Logo d'autodesk Fusion">
-                <img class="logoToolsp" src="Images/Logo/revit.png" alt="Logo d'autodesk Revit">
-                <img class="logoToolsp" src="Images/Logo/html.png" alt="Logo d'Html">
-                <img class="logoToolsp" src="Images/Logo/css.png" alt="Logo de css">
-                <img class="logoToolsp" src="Images/Logo/js.png" alt="Logo de javascript">
-                <img class="logoToolsp" src="Images/Logo/netFramework.png" alt="Logo de Net Framework">
-                <img class="logoToolsp" src="Images/Logo/NET_Core_Logo.png" alt="Logo de Net Core">
-                <img class="logoToolsp" src="Images/Logo/langageC.png" alt="Logo de C#">
-            </div>
-        </section>    
-        <section class="exampleProject">
-            <h2> Exemples d'utilisation d'API :</h2><br>            
-            <h3> API de graphiques et d'isolement d'objets:</h3><br>
-            <img class="exempleI" src="Images/projet_1/isolement-1.png" alt="example isolement avant">
-            <img class="exempleI" src="Images/projet_1/isolement-2.png" alt="example isolement après">
-            <h3> API de changement de couleur et éclatage de l'objet:</h3><br>
-            <video autoplay muted loop>
-                <source src="Images/projet_1/exemple_eclatage.mp4" type="video/mp4">
-            </video>
-            <p>Pour en savoir plus sur ce projet, vous pouvez télécharger le pdf de mon rapport de stage ci dessous et me contacter</p>
-            <button><a href="index.html">Contactez-moi</a></button>
-        </section>
-        
-    </div>  
+            </section>
+            <section class="toolsProject">
+                <h2> Outils utilisées :</h2><br>
+                <div class="logo-tools-p">
+                    <img class="logoToolsp"
+                         src="Images/Logo/autodesk-forge_logo.png"
+                         alt="Logo d'autodesk forge">
+                    <img class="logoToolsp"
+                         src="Images/Logo/Inventor-logo.png"
+                         alt="Logo d'autodesk Inventor">
+                    <img class="logoToolsp"
+                         src="Images/Logo/fusion.png"
+                         alt="Logo d'autodesk Fusion">
+                    <img class="logoToolsp"
+                         src="Images/Logo/revit.png"
+                         alt="Logo d'autodesk Revit">
+                    <img class="logoToolsp"
+                         src="Images/Logo/html.png"
+                         alt="Logo d'Html">
+                    <img class="logoToolsp"
+                         src="Images/Logo/css.png"
+                         alt="Logo de css">
+                    <img class="logoToolsp"
+                         src="Images/Logo/js.png"
+                         alt="Logo de javascript">
+                    <img class="logoToolsp"
+                         src="Images/Logo/netFramework.png"
+                         alt="Logo de Net Framework">
+                    <img class="logoToolsp"
+                         src="Images/Logo/NET_Core_Logo.png"
+                         alt="Logo de Net Core">
+                    <img class="logoToolsp"
+                         src="Images/Logo/langageC.png"
+                         alt="Logo de C#">
+                </div>
+            </section>
+            <section class="exampleProject">
+                <h2> Exemples d'utilisation d'API :</h2><br>
+                <h3> API de graphiques et d'isolement d'objets:</h3><br>
+                <img class="exempleI"
+                     src="Images/projet_1/isolement-1.png"
+                     alt="example isolement avant">
+                <img class="exempleI"
+                     src="Images/projet_1/isolement-2.png"
+                     alt="example isolement après">
+                <h3> API de changement de couleur et éclatage de l'objet:</h3><br>
+                <video autoplay
+                       muted
+                       loop>
+                    <source src="Images/projet_1/exemple_eclatage.mp4"
+                            type="video/mp4">
+                </video>
+                <p>Pour en savoir plus sur ce projet, vous pouvez télécharger le pdf de mon rapport de stage ci dessous
+                    et me contacter</p>
+                <button><a href="index.html#contactId">Contactez-moi</a></button>
+            </section>
+
+        </div>
     </main>
 
     <!-- Definition du Footer -->
     <footer id="footer">
         <div class="UpPage">
-            <a class="scroolNav" href="#top">Haut de page</a>
+            <a class="scroolNav"
+               href="#top">Haut de page</a>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

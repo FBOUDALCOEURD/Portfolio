@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"
+      class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Portfolio design UI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"
+          rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet"
+          href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"
+            defer></script>
 </head>
 
 <body>
     <!--Definition du header pour la Navbar -->
     <header id="headerId">
-            <img class="logoSite" src="Images/U-Xplore.png" alt="Logo du site">
+        <img class="logoSite"
+             src="Images/U-Xplore.png"
+             alt="Logo du site">
         <nav>
             <div class="nav-links">
-                <a href="#aboutId" class="active">Accueil</a>
+                <a href="#aboutId"
+                   class="active">Accueil</a>
                 <a href="#toolsId">Outils</a>
-                <!--<div class="project">
-                    <button class="dropbtn" href="#projectId">Project
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="#">Projet1</a>
-                      <a href="#">Projet2</a>
-                      <a href="#">Projet3</a>
-                    </div>
-                  </div>-->
                 <a href="#projectId">Projets</a>
                 <a href="#contactId">Contact</a>
             </div>
         </nav>
         <div class="downPage">
-            <a class="scroolNav" href="#footer">Bas de page</a>
+            <a class="scroolNav"
+               href="#footer">Bas de page</a>
         </div>
-    </header> 
+    </header>
 
     <!-- Création du contenue de la page -->
     <main>
 
         <!-- Section Présentation -->
-         <section class="about" id="aboutId">
+        <section class="about"
+                 id="aboutId">
             <div class="presentation">
                 <h1>
                     A propos
@@ -50,57 +57,97 @@
                     <br>
                     l'expérience utilisateur, je serais ravi de partager avec
                     <br>
-                     vous mon univers et mes réalisations. 
+                    vous mon univers et mes réalisations.
                     <br>
-                    N'hésitez pas à explorer mon portfolio et à me contacter 
+                    N'hésitez pas à explorer mon portfolio et à me contacter
                     <br>
-                    si vous avez des questions ou des opportunités de collaboration.                
+                    si vous avez des questions ou des opportunités de collaboration.
                 </p>
             </div>
-                <img class="profil" src="Images/moi2.3.png" alt="Ma Photo">
-         </section>
+            <img class="profil"
+                 src="Images/moi2.3.png"
+                 alt="Ma Photo">
+        </section>
 
         <!-- Section Outils-->
-         <section class="tools" id="toolsId">
+        <section class="tools"
+                 id="toolsId">
             <h1 class="textcenter">
                 Mes outils
             </h1>
-           <div class="block">
+            <div class="block">
                 <h2>Design</h2>
-                <div class="designBlock">    
-                    <img class="logoTools" src="Images/Logo/blender.png" alt="Logo de Blender">
-                    <img class="logoTools" src="Images/Logo/canva.png" alt="Logo de Canva">
-                    <img class="logoTools" src="Images/Logo/Krita.png" alt="Logo de Krita">
-                    <img class="logoTools" src="Images/Logo/DaVinci_Resolve_Studio.png" alt="Logo de DaVinci Resolve">
+                <div class="designBlock">
+                    <img class="logoTools"
+                         src="Images/Logo/blender.png"
+                         alt="Logo de Blender">
+                    <img class="logoTools"
+                         src="Images/Logo/canva.png"
+                         alt="Logo de Canva">
+                    <img class="logoTools"
+                         src="Images/Logo/Krita.png"
+                         alt="Logo de Krita">
+                    <img class="logoTools"
+                         src="Images/Logo/DaVinci_Resolve_Studio.png"
+                         alt="Logo de DaVinci Resolve">
                 </div>
                 <h2>Développement</h2>
-                <div class="devBlock">            
-                    <img class="logoTools" src="Images/Logo/langageC.png" alt="Logo de C#">
-                    <img class="logoTools" src="Images/Logo/sql.png" alt="Logo de SQL">
-                    <img class="logoTools" src="Images/Logo/js.png" alt="Logo de JavaScript">
-                    <img class="logoTools" src="Images/Logo/css.png" alt="Logo de CSS">
-                    <img class="logoTools" src="Images/Logo/html.png" alt="Logo d'HTML">
-                    <img class="logoTools" src="Images/Logo/Wix-Logo.png" alt="Logo de Wix">
-                </div>            
+                <div class="devBlock">
+                    <img class="logoTools"
+                         src="Images/Logo/langageC.png"
+                         alt="Logo de C#">
+                    <img class="logoTools"
+                         src="Images/Logo/sql.png"
+                         alt="Logo de SQL">
+                    <img class="logoTools"
+                         src="Images/Logo/js.png"
+                         alt="Logo de JavaScript">
+                    <img class="logoTools"
+                         src="Images/Logo/css.png"
+                         alt="Logo de CSS">
+                    <img class="logoTools"
+                         src="Images/Logo/html.png"
+                         alt="Logo d'HTML">
+                    <img class="logoTools"
+                         src="Images/Logo/Wix-Logo.png"
+                         alt="Logo de Wix">
+                </div>
             </div>
 
             <div class="photographieBloc">
                 <h2>Photographie</h2>
                 <div class="photos">
-                    <img class="profil" src="Images/Galerie/lionne-galerie.jpg" alt="Photo d'une lionne">
-                    <img class="profil" src="Images/Galerie/poisson-galerie.jpg" alt="Photo d'un poisson">
-                    <img class="profil" src="Images/Galerie/grosse-cascade-galerie.jpg" alt="Photo d'une grand cascade">
-                    <img class="profil" src="Images/Galerie/ours-galerie.jpg" alt="Photo d'un ours">
-                    <img class="profil" src="Images/Galerie/montagne-galerie.jpg" alt="Photo d'une montagne">
-                    <img class="profil" src="Images/Galerie/chaine-montagne-galerie.jpg" alt="Photo de plusieurs sommets de montagnes">
-                    <img class="profil" src="Images/Galerie/singe-galerie.jpg" alt="Photo d'un singe">
-                    <img class="profil" src="Images/Galerie/cascade-galerie.jpg" alt="Photo d'une cascade">
+                    <img class="profil"
+                         src="Images/Galerie/lionne-galerie.jpg"
+                         alt="Photo d'une lionne">
+                    <img class="profil"
+                         src="Images/Galerie/poisson-galerie.jpg"
+                         alt="Photo d'un poisson">
+                    <img class="profil"
+                         src="Images/Galerie/grosse-cascade-galerie.jpg"
+                         alt="Photo d'une grand cascade">
+                    <img class="profil"
+                         src="Images/Galerie/ours-galerie.jpg"
+                         alt="Photo d'un ours">
+                    <img class="profil"
+                         src="Images/Galerie/montagne-galerie.jpg"
+                         alt="Photo d'une montagne">
+                    <img class="profil"
+                         src="Images/Galerie/chaine-montagne-galerie.jpg"
+                         alt="Photo de plusieurs sommets de montagnes">
+                    <img class="profil"
+                         src="Images/Galerie/singe-galerie.jpg"
+                         alt="Photo d'un singe">
+                    <img class="profil"
+                         src="Images/Galerie/cascade-galerie.jpg"
+                         alt="Photo d'une cascade">
                 </div>
             </div>
-         </section>
+        </section>
 
         <!-- Section Projets -->
-         <section class="projects" id="projectId">
+        <section class="projects"
+                 id="projectId">
             <h1 class="textcenter">
                 Mes projets
             </h1>
@@ -108,35 +155,41 @@
                 <h2 class=>
                     Projet : Autodesk Forge
                 </h2>
-                <div class ="alignProjetL">
-                    <img class="projetImg" src="Images/autodesk.png" alt="Image d'autodesk Forge">
+                <div class="alignProjetL">
+                    <img class="projetImg"
+                         src="Images/autodesk.png"
+                         alt="Image d'autodesk Forge">
                     <p class="textPL">
                         Projet Autodesk Forge portant sur les API et le Cloud.
                     </p>
-                    
+
                 </div>
                 <button><a href="Projet1.html">En savoir plus...</a></button>
-                
+
             </div>
             <div class="projetRight">
                 <h2>
                     Projet : PlantAxis
                 </h2>
-                <div class ="alignProjetR">
-                    <img class="projetImg" src="Images/Plantaxis_site.png" alt="Image de PlantAxis">
+                <div class="alignProjetR">
+                    <img class="projetImg"
+                         src="Images/Plantaxis_site.png"
+                         alt="Image de PlantAxis">
                     <p>
                         Création d'un site web d'horticulture
                     </p>
                 </div>
                 <button><a href="projet2.html">En savoir plus...</a></button>
-              
+
             </div>
             <div class="projetLeft">
                 <h2>
                     Projet : Montages/Animations
                 </h2>
-                <div class ="alignProjetL">
-                    <img class="projetImg" src="Images/Animation_Montage.png" alt="Image de Montage">
+                <div class="alignProjetL">
+                    <img class="projetImg"
+                         src="Images/Animation_Montage.png"
+                         alt="Image de Montage">
                     <p>
                         Exemple de plusieurs vidéos et animations sur des projets différents
                     </p>
@@ -144,10 +197,11 @@
                 <button><a href="projet3.html">En savoir plus...</a></button>
             </div>
 
-         </section>
+        </section>
 
         <!-- Section Contact -->
-         <section class="contact" id="contactId">
+        <section class="contact"
+                 id="contactId">
             <div class="contactText">
                 <h1>
                     Contactez moi
@@ -161,32 +215,48 @@
                 <p>
                     florian.bcoeurdray@gmail.com
                 </p>
-               <a href="https:www.linkedin.com/in/florian-boudal-coeurdray-69b3a8223" target="_blank"><img class="logo-linkedin" src="Images/logo-linkedin.png" alt="logo linkedin"></a> 
+                <a href="https:www.linkedin.com/in/florian-boudal-coeurdray-69b3a8223"
+                   target="_blank"><img class="logo-linkedin"
+                         src="Images/logo-linkedin.png"
+                         alt="logo linkedin"></a>
             </div>
 
-            <form>
+            <form action="https://formsubmit.co/florian.bcoeurdray@gmail.com"
+                  method="POST">
                 <label for="fName">Prénom:</label><br>
-                <input type="text" id="fName" name="fName" placeholder="Votre Prénom..."><br>
+                <input type="text"
+                       id="fName"
+                       name="firstname"
+                       placeholder="Votre Prénom..."><br>
                 <label for="lName">Nom de famille:</label><br>
-                <input type="text" id="lName" name="lName" placeholder="Votre Nom..."><br>
+                <input type="text"
+                       id="lName"
+                       name="lastname"
+                       placeholder="Votre Nom..."><br>
                 <label for="email">E-mail *:</label><br>
-                <input type="email" id="email" name="email" placeholder="Votre Mail..."><br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Votre Mail..."><br>
                 <label for="message">Message:</label><br>
-                 <textarea name="message" placeholder="N'hésitez pas à m'écrire...">
+                <textarea name="message"
+                          placeholder="N'hésitez pas à m'écrire...">
                  </textarea><br><br>
-                <input type="submit" value="Envoyer">
+                <input type="submit"
+                       value="Envoyer">
             </form>
-         </section>
-        
+        </section>
+
     </main>
 
     <!-- Definition du Footer -->
     <footer id="footer">
         <div class="UpPage">
-            <a class="scroolNav" href="#top">Haut de page</a>
+            <a class="scroolNav"
+               href="#top">Haut de page</a>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
